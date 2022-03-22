@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.ProductSearchController">
+   <children>
+      <Label layoutX="91.0" layoutY="28.0" prefHeight="19.0" prefWidth="96.0" text="Search Product">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="productTableView" layoutX="91.0" layoutY="68.0" prefHeight="424.0" prefWidth="898.0">
+        <columns>
+          <TableColumn fx:id="productIDTableColumn" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="brandTableColumn" prefWidth="75.0" text="Brand" />
+            <TableColumn fx:id="modelNumberTableColumn" prefWidth="129.0" text="Model Number" />
+            <TableColumn fx:id="modelYearTableColumn" prefWidth="122.0" text="Model Year" />
+            <TableColumn fx:id="productNameTableColumn" minWidth="0.0" prefWidth="181.0" text="Product Name" />
+            <TableColumn fx:id="descriptionTableColumn" minWidth="0.0" prefWidth="314.0" text="Description" />
+        </columns>
+      </TableView>
+      <TextField fx:id="keywordTextField" layoutX="202.0" layoutY="25.0" prefHeight="25.0" prefWidth="787.0" promptText="Keywords..." />
+   </children>
+</Pane>
